@@ -4,6 +4,7 @@
 
 #include "palindrome.h"
 
+/// Takes in string and returns a string allocated on the heap which is filled with the reverse of the input string. Note that this resulting string must be freed.
 char *str_reverse(char const *str) {
   int len, i;
   char *result;
@@ -18,6 +19,7 @@ char *str_reverse(char const *str) {
   return result;
 }
 
+/// Takes in a string and returns a string containing either "Yes" or "No" allocated on the heap. Note that this resulting string must be freed.
 char *palindrome(char const *str) {
   char *rev;
   int i;
