@@ -22,30 +22,23 @@ char *str_reverse(char const *str) {
 /// Takes in a string and returns a string containing either "Yes" or "No" allocated on the heap. Note that this resulting string must be freed.
 char *palindrome(char const *str) {
   char *rev;
-  int i;
   bool result = true;
   char *answer;
 
   rev = str_reverse(str);
-  i = 0;
   
   // Compare `str` and `rev`, setting result to true if they are the same string
   result = strcmp(str, rev) == 0;
-  
+
   // Free the memory allocated by the call to `str_reverse`
   free(rev);
 
   if (result) {
     answer = (char*) calloc(4, sizeof(char));
-    answer[0] = 'Y';
-    answer[1] = 'e';
-    answer[2] = 's';
-    answer[3] = '\0';
+    strcpy(answer, "Yes\0");
   } else {
     answer = (char*) calloc(3, sizeof(char));
-    answer[0] = 'N';
-    answer[1] = 'o';
-    answer[2] = '\0';
+    strcpy(answer, "No\0");
   }
 
   return answer;
