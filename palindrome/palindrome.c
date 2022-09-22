@@ -28,12 +28,12 @@ char *palindrome(char const *str) {
 
   rev = str_reverse(str);
   i = 0;
-  while (result && str[i]) {
-    if (str[i] != rev[i]) {
-      result = false;
-    }
-    ++i;
-  }
+  
+  // Compare `str` and `rev`, setting result to true if they are the same string
+  result = strcmp(str, rev) == 0;
+  
+  // Free the memory allocated by the call to `str_reverse`
+  free(rev);
 
   if (result) {
     answer = (char*) calloc(4, sizeof(char));
