@@ -1,0 +1,359 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/mcphee/Documents/Courses/CSci3412/C-strings-and-memory-management/palindrome
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 105
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 21
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: null
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 440
+    content: "$ ls"
+  # - delay: 80
+  #   content: s
+  - delay: 128
+    content: "\r\ncontrol_d.yml       palindrome.c        palindrome_test.cpp\r\nmain.c              palindrome.h        sample_input.txt\r\n$ "
+  - delay: 1121
+    content: "gcc "
+  # - delay: 184
+  #   content: c
+  # - delay: 145
+  #   content: c
+  # - delay: 110
+  #   content: ' '
+  - delay: 145
+    content: "-Wall "
+  # - delay: 240
+  #   content: W
+  # - delay: 200
+  #   content: a
+  # - delay: 88
+  #   content: l
+  # - delay: 185
+  #   content: l
+  # - delay: 62
+  #   content: ' '
+  - delay: 233
+    content: "-o palindrome "
+  # - delay: 223
+  #   content: o
+  # - delay: 113
+  #   content: ' '
+  # - delay: 1648
+  #   content: p
+  # - delay: 136
+  #   content: a
+  # - delay: 55
+  #   content: l
+  # - delay: 408
+  #   content: i
+  # - delay: 161
+  #   content: 'n'
+  # - delay: 168
+  #   content: d
+  # - delay: 208
+  #   content: r
+  # - delay: 79
+  #   content: o
+  # - delay: 144
+  #   content: m
+  # - delay: 104
+  #   content: e
+  # - delay: 96
+  #   content: ' '
+  - delay: 689
+    content: "main.c "
+  # - delay: 111
+  #   content: a
+  # - delay: 49
+  #   content: i
+  # - delay: 87
+  #   content: 'n'
+  # - delay: 193
+  #   content: .
+  # - delay: 111
+  #   content: c
+  # - delay: 64
+  #   content: ' '
+  - delay: 185
+    content: "palidrome.c"
+  # - delay: 103
+  #   content: a
+  # - delay: 113
+  #   content: l
+  # - delay: 304
+  #   content: "\aindrome"
+  # - delay: 536
+  #   content: .
+  # - delay: 71
+  #   content: c
+  - delay: 1016
+    content: "\r\n"
+  - delay: 415
+    content: "$ ./palindrome"
+  # - delay: 1345
+  #   content: .
+  # - delay: 207
+  #   content: /
+  # - delay: 209
+  #   content: p
+  # - delay: 96
+  #   content: a
+  # - delay: 88
+  #   content: l
+  # - delay: 320
+  #   content: i
+  # - delay: 159
+  #   content: 'n'
+  # - delay: 433
+  #   content: 'drome '
+  - delay: 1424
+    content: "\r\n"
+  - delay: 1343
+    content: "Hello"
+  # - delay: 209
+  #   content: e
+  # - delay: 103
+  #   content: l
+  # - delay: 162
+  #   content: l
+  # - delay: 191
+  #   content: o
+  - delay: 240
+    content: "\r\nIs the string <Hello> a palindrome? No\r\n"
+  - delay: 1919
+    content: "Frogs"
+  # - delay: 225
+  #   content: r
+  # - delay: 56
+  #   content: o
+  # - delay: 119
+  #   content: g
+  - delay: 105
+    content: "\r\nIs the string <Frog> a palindrome? No\r\n"
+  - delay: 1088
+    content: "racecar"
+  # - delay: 176
+  #   content: a
+  # - delay: 207
+  #   content: c
+  # - delay: 209
+  #   content: e
+  # - delay: 431
+  #   content: c
+  # - delay: 200
+  #   content: a
+  # - delay: 64
+  #   content: r
+  - delay: 633
+    content: "\r\nIs the string <racecar> a palindrome? Yes\r\n"
+  - delay: 5143
+    content: "I'm going to type ^D to exit this."
+  # - delay: 152
+  #   content: ''''
+  # - delay: 192
+  #   content: m
+  # - delay: 80
+  #   content: ' '
+  # - delay: 448
+  #   content: g
+  # - delay: 89
+  #   content: o
+  # - delay: 168
+  #   content: i
+  # - delay: 119
+  #   content: 'n'
+  # - delay: 81
+  #   content: g
+  # - delay: 104
+  #   content: ' '
+  # - delay: 135
+  #   content: t
+  # - delay: 56
+  #   content: o
+  # - delay: 96
+  #   content: ' '
+  # - delay: 288
+  #   content: t
+  # - delay: 120
+  #   content: 'y'
+  # - delay: 137
+  #   content: p
+  # - delay: 95
+  #   content: e
+  # - delay: 97
+  #   content: ' '
+  # - delay: 1312
+  #   content: ^
+  # - delay: 375
+  #   content: D
+  # - delay: 184
+  #   content: ' '
+  # - delay: 600
+  #   content: t
+  # - delay: 89
+  #   content: o
+  # - delay: 72
+  #   content: ' '
+  # - delay: 343
+  #   content: e
+  # - delay: 241
+  #   content: x
+  # - delay: 351
+  #   content: i
+  # - delay: 105
+  #   content: t
+  # - delay: 79
+  #   content: ' '
+  # - delay: 169
+  #   content: t
+  # - delay: 72
+  #   content: h
+  # - delay: 48
+  #   content: i
+  # - delay: 96
+  #   content: s
+  # - delay: 647
+  #   content: .
+  - delay: 568
+    content: "\r\nIs the string <I'm going to type ^D to exit this.> a palindrome? No\r\n"
+  - delay: 1633
+    content: "^D\b\b$ "
+  - delay: 1772
+    content: "./palindrome < sample_input.txt"
+  # - delay: 208
+  #   content: /
+  # - delay: 175
+  #   content: p
+  # - delay: 113
+  #   content: a
+  # - delay: 103
+  #   content: l
+  # - delay: 352
+  #   content: i
+  # - delay: 160
+  #   content: 'n'
+  # - delay: 111
+  #   content: d
+  # - delay: 569
+  #   content: 'rome '
+  # - delay: 719
+  #   content: <
+  # - delay: 152
+  #   content: ' '
+  # - delay: 784
+  #   content: s
+  # - delay: 208
+  #   content: a
+  # - delay: 57
+  #   content: m
+  # - delay: 144
+  #   content: 'ple_input.txt '
+  - delay: 1552
+    content: "\r\nIs the string <frogs> a palindrome? No\r\nIs the string <aba> a palindrome? Yes\r\nIs the string <madamimadam> a palindrome? Yes\r\nIs the string <racecar> a palindrome? Yes\r\nIs the string <elephant> a palindrome? No\r\nIs the string <morris> a palindrome? No\r\nIs the string <minnesota> a palindrome? No\r\n$ "
+  - delay: 2000
+    content: ' '
