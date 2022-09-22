@@ -1,0 +1,20 @@
+name: palindrome-main-valgrind
+
+on: push
+#    paths:
+#    - 'palindrome/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install valgrind
+      run: sudo apt-get install -y valgrind
+    - name: Check out the code
+      uses: actions/checkout@v2
+    - name: Compile code
+      run: gcc -Wall -g -o palindrome palindrome.c main.c
+      working-directory: palindrome
+    - name: Run test
+      run: valgrind -v --leak-check=full --show-leak-kinds=all --error-exitcode=1 ./palindrome < sample_input.txt
+      working-directory: palindrome
