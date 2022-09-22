@@ -12,7 +12,9 @@ int main(int argc, char *argv[]) {
 
   while (getline(&line, &size, stdin) > 0) {
     const char* result = disemvowel(line);
-    printf("%s\n", disemvowel(line));
+    printf("%s\n", result);
     free((void*) result);
   }
+
+  free((void*)line);
 }
